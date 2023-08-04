@@ -1,0 +1,118 @@
+/* Estilos generales */
+
+.catalog {
+    height: 100vh;
+    background-image: url(../img/fondo-catalog.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    box-sizing: content-box;
+    font-family: "BrunoAce";
+
+    .catalogo-men,
+    .catalogo-woman,
+    .catalogo-accesorios {
+        text-align: center;
+        background-color: $color-fondo-3;
+        padding: 8px;
+        color:$color2;
+    }
+
+    image-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        small-image {
+            width: 300px;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+    }
+
+    footer.black-bg {
+        background-color:$color-fondo-2;
+        color:$color2;
+    
+        footer-container {
+            padding: 20px 0;
+        }
+    
+    
+    }
+
+    socials-container {
+        margin-bottom: 10px;
+    
+        social-networks {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+    
+            li {
+                display: inline-block;
+    
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+    
+            }
+    
+    
+        }
+    
+        copy {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        
+    }
+
+    maps {
+        width: 100%;
+    }
+    
+    section {
+        padding-top: 30px;
+    }
+
+}
+
+
+/* Media Queries */
+
+/* Estilos para dispositivos de escritorio */
+@media screen and (min-width: 768px) {
+    .small-image {
+        width: 400px;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    .catalogo-men,
+    .catalogo-woman,
+    .catalogo-accesorios {
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    .small-image {
+        width: 100%;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .maps {
+        height: 200px;
+    }
+}

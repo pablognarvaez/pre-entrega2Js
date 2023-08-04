@@ -1,0 +1,115 @@
+/* section-abtus" */
+.section-abtus {
+    padding: 40px;
+
+    h3 {
+        font-size: 24px;
+        height: 50px;
+        line-height: 50px;
+        background-color:$color-fondo-4;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        background-color:$color-fondo-4;
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    
+}
+
+/* Estilos para teléfonos celulares */
+@media (max-width: 767px) {
+    .listas {
+        flex-direction: column;
+    }
+
+    .listas li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .section-abtus h3,
+    .section-abtus p {
+        margin-bottom: 20px;
+    }
+    
+    .maps {
+        height: 150px;
+    }
+}
+
+  /* Estilos para desktop */
+@media (min-width: 768px) {
+    .listas {
+        flex-direction: row;
+    }
+    
+    .section-abtus h3,
+    .section-abtus p {
+        margin-bottom: 30px;
+    }
+    
+    .maps {
+        height: 200px;
+    }
+}
+
+.section-abtus {
+    padding: 40px;
+}
+
+.section-abtus h3 {
+    font-size: 24px;
+    height: 50px;
+    line-height: 50px;
+    background-color:$color-fondo-4;
+    padding: 10px;
+}
+
+.section-abtus p {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color:$color-fondo-4;
+    padding: 10px;
+}
+
+.section-abtus img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.black-bg {
+    background-color: #000;
+    color:$color2;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-networks {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.social-networks li {
+    margin-right: 10px;
+}
+
+.copy {
+    margin-top: 20px;
+}

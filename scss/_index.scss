@@ -1,0 +1,206 @@
+/* fuentes texto */
+@font-face {
+    font-family: "BrunoAce";
+    src: url(../fonts/BrunoAce.ttf);
+}
+
+/*body*/
+body {
+    height: 100vh;
+    background-image: url(../img/fondo-index.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    box-sizing: content-box;
+    font-family: "BrunoAce";
+
+    /*header*/
+    header {
+        margin-top: 15px;
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+
+            .titulo-page {
+                margin: 0;
+                font-size: 24px;
+                font-weight: bold;
+                color:$color-fondo-2;
+            }
+        }
+
+        .limage {
+            width: 130px;
+            height: auto;
+            margin-right: 10px;
+}
+
+        /*nav*/
+        nav {
+            display: flex;
+            justify-content: flex-end;
+
+            ul.listas {
+                list-style-type: none;
+
+                li {
+                    display: inline;
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+
+    /* tarjetas*/
+.tarjetas {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+
+            p {
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            img {
+                width: 270px;
+                height: auto;
+                box-shadow: 0 0 10px rgb(225, 222, 222);
+                border-radius: 10%;
+            }
+
+            button {
+                border-color: #3498db;
+                color: $color1;
+                box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+                -webkit-transition: all 150ms ease-in-out;
+                transition: all 150ms ease-in-out;
+                margin-top: 10px;
+                border-radius: 10%;
+                padding: 10px 20px;
+
+                &:hover {
+                    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+                }
+            }
+        }
+    }
+}
+
+}
+
+
+/*slider*/
+#carouselIndicadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-fondo-1;
+
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+}
+
+/*pre-footer*/
+.pre-footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .gif1 img {
+        width: 100%;
+        height: 273px;
+    }
+}
+
+/*footer*/
+.black-bg {
+    background-color: $color-fondo-2;
+
+    p {
+        color: $color2;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .lista-alineada {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+
+        .small-image {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+    }
+}
+
+/* Estilos para dispositivos de escritorio */
+@media (min-width: 992px) {
+    .tarjetas li {
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .tarjetas li img {
+        width: 270px;
+        height: auto;
+        box-shadow: 0 0 10px rgb(225, 222, 222);
+        border-radius: 10%;
+    }
+
+    .tarjetas li:nth-child(2) img {
+        height: 365px;
+    }
+
+    .gif1 img {
+        width: 100%;
+        height: 273px;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 576px) {
+    .tarjetas {
+        flex-direction: column;
+        li {
+            flex: 1 1 100%;
+            margin: 10px;
+            text-align: center;
+        }
+    }
+
+    .tarjetas li img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 10px rgb(225, 222, 222);
+        border-radius: 10%;
+    }
+
+    .tarjetas li:nth-child(2) img {
+        height: auto;
+    }
+
+    .gif1 img {
+        width: 100%;
+        height: auto;
+    }
+}
